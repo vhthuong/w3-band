@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#wrapper{
+
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#nav {
+    
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav > li > a{
+    color: #ccc;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    display: block;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li {
+    min-width: 160px;
+}
+
+#nav .subnav a {
+    color: #000;
+}
+
+#search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 100%;
+    padding: 14.5px 24px;
+}
+
+#search a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#search:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+}
+
+#slider .img-container {
+    position: relative;
+}
+
+#slider .img-container .detail {
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    padding: 32px 16px;
+    left: 0;
+    right: 0;
+}
+
+#slider .img-container .detail h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    margin: 10px 0;
+}
+
+#slider .img-container .detail p {
+    font-size: 15px;
+    color: white;
+}
+
+#slider .img-container img {
+    width: 100%;
+    height: auto;
+}
+
+#content {
+
+}
+
+#content .content-section {
+    width: 800px;
+    margin: 0 auto;
+    padding: 64px 16px;
+
+}
+
+#content .content-section .section-heading {
+    font-weight: 500;
+    font-size: 30px;
+    margin: 10px 0;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+#content .content-section .section-sub-heading {
+    margin: 15px 0;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    opacity: 0.6;
+}
+
+#content .content-section .about-text {
+    font-size: 15px;
+    margin: 15px 0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+#content .content-section .about-team {
+    display: flex;
+    padding: 32px 0;
+    text-align: center;
+}
+
+#content .content-section .about-team p {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+#content .content-section .about-team img {
+    margin: 0 0 16px;
+    width: 60%;
+}
+
+#footer {
+
+}
+
+#banner {
+
+}
+
+#more {
+ 
+}

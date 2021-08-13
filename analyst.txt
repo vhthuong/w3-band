@@ -1,0 +1,17 @@
+1. header
+    - navigation
+    - search
+2. slider
+3. content
+    - band information
+    - tour dates
+    - contact
+4. footer
+    - banner
+    - social network
+
+***///Phan tich Element///***
+1. Vi tri
+2. Kich thuoc  
+3. Mau sac
+4. Kieu dang
