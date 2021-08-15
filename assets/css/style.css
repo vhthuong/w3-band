@@ -8,10 +8,14 @@ html {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+.white-text {
+    color: #fff !important;
+}
+
 #wrapper{
 
 }
-
+/* Header Start */
 #header {
     height: 46px;
     background-color: #000;
@@ -91,7 +95,9 @@ html {
     background-color: red;
     cursor: pointer;
 }
+/* Header End */
 
+/* Slide Start */
 #slider {
     position: relative;
     margin-top: 46px;
@@ -126,7 +132,9 @@ html {
     width: 100%;
     height: auto;
 }
+/* Slide End */
 
+/* Content Start */
 #content {
 
 }
@@ -175,6 +183,33 @@ html {
 #content .content-section .about-team img {
     margin: 0 0 16px;
     width: 60%;
+}
+
+.tour-section {
+    background-color: #000;
+}
+
+.tour-section .tour-list {
+    list-style-type: none;
+    background-color: #fff;
+    margin-top: 40px;
+    border: 1px solid #ddd;
+}
+
+.tour-section .tour-list li {
+    color: #757575;
+    font-size: 15px;
+    padding: 10px 16px;
+    border: 1px solid #ddd;
+}
+
+.tour-list .out-ticket {
+    color: #fff;
+    background-color: #f44336;
+}
+
+.tour-list .ticket-remain {
+
 }
 
 #footer {
