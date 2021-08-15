@@ -12,6 +12,22 @@ html {
     color: #fff !important;
 }
 
+.black-text {
+    color: #000 !important;
+}
+
+.white-background {
+    background-color: #fff !important;
+}
+
+.black-background {
+    background-color: #000 !important;
+}
+
+.opacity-06 {
+    opacity: 0.6 !important;
+}
+
 #wrapper{
 
 }
@@ -206,10 +222,64 @@ html {
 .tour-list .out-ticket {
     color: #fff;
     background-color: #f44336;
+    margin-left: 16px;
+    padding: 2px 8px;
 }
 
 .tour-list .ticket-remain {
+    color: #ffffff;
+    float: right;
+    margin-right: 16px;
+    background-color: #000;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+}
 
+.ticket-sell {
+    color: #ffffff;
+    font-size: 15px;
+    margin: 0 -16px;
+    padding: 32px 8px;
+    display: flex;
+}
+
+.ticket-sell .ticket-box {
+    margin: 0 0 16px;
+    padding: 0 8px;
+}
+
+.ticket-sell  img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.ticket-sell img:hover {
+    opacity: 0.6;
+}
+
+.ticket-sell .container-ticket-info {
+    padding: 0.01em 16px;
+}
+
+.ticket-sell .ticket-title {
+    margin: 15px 0;
+}
+
+.ticket-sell .ticket-date {
+    margin: 15px 0;
+}
+
+.ticket-sell .ticket-detail {
+    margin: 15px 0;
+}
+
+.ticket-sell .buy-btn {
+    margin: 0 0 16px;
+    padding: 8px 16px;
+    border: none;
 }
 
 #footer {
