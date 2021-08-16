@@ -199,6 +199,7 @@ html {
 #content .content-section .about-team img {
     margin: 0 0 16px;
     width: 60%;
+    border-radius: 4px;
 }
 
 .tour-section {
@@ -254,7 +255,7 @@ html {
 
 .ticket-sell  img {
     width: 100%;
-    vertical-align: middle;
+    display: block;
 }
 
 .ticket-sell img:hover {
@@ -275,6 +276,7 @@ html {
 
 .ticket-sell .ticket-detail {
     margin: 15px 0;
+    line-height: 22px;
 }
 
 .ticket-sell .buy-btn {
@@ -282,6 +284,7 @@ html {
     padding: 8px 16px;
     border: none;
     line-height: 22px;
+    cursor: pointer;
 }
 
 .ticket-sell .buy-btn:hover {
@@ -293,25 +296,117 @@ html {
 /* Start Ticket Modal */
 
 #ticketModal {
-    z-index: 3;
-    padding-top: 100px;
     position: fixed;
-    left: 0;
     top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
     background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+    display: none;
 }
 
 #ticketModal .modal-content {
+    background-color: #fff;
     position: relative;
-    animation: animatetop 0.4s;
+    width: 600px; 
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+}
+
+span.x-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+span.x-btn {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 16px;
+    cursor: pointer;
 }
 
 #ticketModal .modal-header {
-
+    color: #fff;
+    background-color: #009688;
+    text-align: center;
+    padding: 32px 16px;
 }
+
+#ticketModal .modal-header .suitcase-icon {
+    margin-right: 6px;
+}
+
+#ticketModal .modal-header h2 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+/* Modal body */
+.modal-body {
+    font-size: 15px;
+    padding: 16px;
+}
+
+.modal-quantity, .modal-email {
+    display: block;
+    margin: 15px 0;
+}
+
+.input-quantity, .input-email {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+.modal-pay-btn {
+    display: block;
+    border: none;
+    padding: 16px;
+    margin: 16px 0;
+    width: 100%;
+    color: white;
+    background-color: #009688;
+    cursor: pointer;
+}
+
+button.modal-pay-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+/* Modal footer */
+
+.modal-footer {
+    padding: 16px;
+}
+
+.modal-help {
+    text-align: right;
+}
+
+.modal-help a {
+    color: #2196F3;
+}
+
+/* Animation */
+ 
+
+/* Class to show and hidden Modal */
+.show-modal {
+    display: flex !important;
+}
+
+/* ------------------------------ */
+
 
 /* Start Footer */
 #footer {

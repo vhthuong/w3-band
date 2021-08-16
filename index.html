@@ -115,7 +115,7 @@
                                 </p>
                                 <p class="ticket-date black-text opacity-06">Fri 27 Nov 2016</p>
                                 <p class="ticket-detail black-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="buy-btn black-background white-text">Buy Tickets</button>
+                                <button class="buy-btn black-background white-text js-buy-btn">Buy Tickets</button>
                             </div>
                         </div>
     
@@ -127,7 +127,7 @@
                                 </p>
                                 <p class="ticket-date black-text opacity-06">Sat 28 Nov 2016</p>
                                 <p class="ticket-detail black-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="buy-btn black-background white-text">Buy Tickets</button>                            
+                                <button class="buy-btn black-background white-text js-buy-btn">Buy Tickets</button>                            
                             </div>
                         </div>
                         
@@ -139,7 +139,7 @@
                                 </p>
                                 <p class="ticket-date black-text opacity-06">Sun 29 Nov 2016</p>
                                 <p class="ticket-detail black-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="buy-btn black-background white-text">Buy Tickets</button>
+                                <button class="buy-btn black-background white-text js-buy-btn">Buy Tickets</button>
                                 
                             </div>
                         </div>
@@ -148,17 +148,41 @@
                 </div>
             </div>
 
-            <div id="ticketModal">
-                <div class="modal-content">
+            <div id="ticketModal" class="js-ticketModal">
+                <div class="modal-content js-modal-content">
+                    <span class="x-btn js-x-btn">x</span>
                     <div class="modal-header">
-                        <span class="x-btn">x</span>
                         <h2 class="modal-wide">
-                            <i class="fa fa-suitcase"></i>
+                            <i class="fa fa-suitcase suitcase-icon"></i>
                             Tickets
                         </h2>
                     </div>
+                    <div class="modal-body">
+                        <label for="label-quantity" class="modal-quantity">
+                            <i class="fa fa-shopping-cart"></i>
+                            Tickets, $15 per person
+                        </label>
+                        <input type="text" class="input-quantity" id="label-quantity" placeholder="How many?">
+
+                        <label for="label-email" class="modal-email">
+                            <i class="fa fa-user"></i>
+                            Send To
+                        </label>
+                        <input type="email" class="input-email" id="label-email" placeholder="Enter email">
+                        <button class="modal-pay-btn">
+                            PAY
+                            <i class="fa fa-check"></i>
+                        </button>
+                    </div>
+                    <div class="modal-footer">
+                        <p class="modal-help">
+                            Need
+                            <a href="#" class="modal-help-link">help?</a>
+                        </p>
+                    </div>
                 </div>
             </div>
+
             <div class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
@@ -176,5 +200,33 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // Show and hidden Modal
+        const buyBtns = document.querySelectorAll('.js-buy-btn');
+        const ticketModal = document.querySelector('.js-ticketModal');
+        const modalContent = document.querySelector('.js-modal-content');
+        const closeBtn = document.querySelector('.js-x-btn');
+
+        function showModal() {
+            ticketModal.classList.add('show-modal');    
+        }
+
+        function hiddenModal() {
+            ticketModal.classList.remove('show-modal');
+        }
+
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showModal)
+        }
+        
+        closeBtn.addEventListener('click', hiddenModal);
+        
+        ticketModal.addEventListener('click', hiddenModal);
+        
+        modalContent.addEventListener('click', (event) => {
+            event.stopPropagation();
+        })
+    </script>
 </body>
 </html>
