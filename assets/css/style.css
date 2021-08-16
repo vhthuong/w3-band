@@ -7,13 +7,17 @@
 html {
     font-family: Helvetica, Arial, sans-serif;
 }
-
+/*-------------Common Css------------*/
 .white-text {
     color: #fff !important;
 }
 
 .black-text {
     color: #000 !important;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .white-background {
@@ -27,6 +31,27 @@ html {
 .opacity-06 {
     opacity: 0.6 !important;
 }
+
+.clear {
+    clear: both;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding: 0 8px;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+
+/* ------------Main-------------- */
 
 #wrapper{
 
@@ -88,10 +113,6 @@ html {
 
 #nav .subnav li {
     min-width: 160px;
-}
-
-#nav .subnav a {
-    color: #000;
 }
 
 #search {
@@ -159,6 +180,7 @@ html {
     width: 800px;
     margin: 0 auto;
     padding: 64px 16px;
+    max-width: calc(100% - 16px);
 
 }
 
@@ -186,10 +208,9 @@ html {
 }
 
 #content .content-section .about-team {
-    display: flex;
-    padding: 32px 0;
-    text-align: center;
+    padding: 32px;
 }
+
 
 #content .content-section .about-team p {
     font-size: 15px;
@@ -197,13 +218,8 @@ html {
 }
 
 #content .content-section .about-team img {
-    margin: 0 0 16px;
     width: 60%;
     border-radius: 4px;
-}
-
-.tour-section {
-    background-color: #000;
 }
 
 .tour-section .tour-list {
@@ -241,16 +257,8 @@ html {
 }
 
 .ticket-sell {
-    color: #ffffff;
-    font-size: 15px;
-    margin: 0 -16px;
-    padding: 32px 8px;
-    display: flex;
-}
-
-.ticket-sell .ticket-box {
-    margin: 0 0 16px;
-    padding: 0 8px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .ticket-sell  img {
@@ -263,28 +271,24 @@ html {
 }
 
 .ticket-sell .container-ticket-info {
-    padding: 0.01em 16px;
-}
-
-.ticket-sell .ticket-title {
-    margin: 15px 0;
+    padding: 16px;
 }
 
 .ticket-sell .ticket-date {
-    margin: 15px 0;
+    margin: 14px 0;
 }
 
 .ticket-sell .ticket-detail {
-    margin: 15px 0;
     line-height: 22px;
 }
 
 .ticket-sell .buy-btn {
-    margin: 0 0 16px;
+    margin-top: 15px;
     padding: 8px 16px;
     border: none;
     line-height: 22px;
     cursor: pointer;
+    font-weight: 550;
 }
 
 .ticket-sell .buy-btn:hover {
@@ -315,6 +319,7 @@ html {
     width: 600px; 
     max-width: calc(100% - 32px);
     min-height: 200px;
+    animation: popUpModal ease .6s;
 }
 
 span.x-btn:hover {
@@ -364,6 +369,7 @@ span.x-btn {
     width: 100%;
     border: 1px solid #ddd;
     padding: 8px;
+    margin-bottom: 16px;
 }
 
 
@@ -371,7 +377,6 @@ span.x-btn {
     display: block;
     border: none;
     padding: 16px;
-    margin: 16px 0;
     width: 100%;
     color: white;
     background-color: #009688;
@@ -398,7 +403,19 @@ button.modal-pay-btn:hover {
 }
 
 /* Animation */
- 
+@keyframes popUpModal {
+    from {
+        opacity: 0;
+        transform: translateY(-160px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* ------------------------------- */
 
 /* Class to show and hidden Modal */
 .show-modal {

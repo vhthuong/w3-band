@@ -7,10 +7,10 @@
     <title>The Band</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/main.js"></script>
 </head>
 <body>
     <div id="wrapper">
+        <!-- Start Header -->
         <div id="header">
             <ul id="nav">
                 <li><a href="#">Home</a></li>
@@ -22,9 +22,9 @@
                         <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a class="black-text" href="">Merchandise</a></li>
+                        <li><a class="black-text" href="">Extras</a></li>
+                        <li><a class="black-text" href="">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -34,7 +34,9 @@
                 </a>
             </div>
         </div>
+        <!-- End Header -->
 
+        <!-- Start Slider -->
         <div id="slider">
             <div class="img-container">
                 <img src="./assets/img/slide/la.jpg" alt="Los Angeles">
@@ -65,28 +67,35 @@
                 </div>
             </div>
         </div>
+        <!-- End Slider -->
 
+        <!-- Start Content -->
         <div id="content">
+            <!-- Start About Band -->
             <div class="content-section">
                 <h2 class="section-heading">THE BAND</h2>
                 <p class="section-sub-heading">We love music</p>
                 <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div class="about-team">
-                    <div class="member">
+                <div class="about-team row">
+                    <div class="col col-third text-center">
                         <p>Name</p>
                         <img src="./assets/img/profile/bandmember.jpg" alt="Band Member">
                     </div>
-                    <div class="member">
+                    <div class="col col-third text-center">
                         <p>Name</p>
                         <img src="./assets/img/profile/bandmember.jpg" alt="Band Member">
                     </div>
-                    <div class="member">
+                    <div class="col col-third text-center">
                         <p>Name</p>
                         <img src="./assets/img/profile/bandmember.jpg" alt="Band Member">
                     </div>
+                    <div class="clear"></div>
                 </div>
             </div>
-            <div class="tour-section">
+            <!-- End About Band -->
+
+            <!-- Start Tour Dates -->
+            <div class="black-background tour-section">
 
                 <div class="content-section">
                     <h2 class="section-heading white-text">TOUR DATES</h2>
@@ -105,10 +114,10 @@
                             <span class="ticket-remain">3</span>
                         </li>
                     </ul>
-                    <div class="ticket-sell">
+                    <div class="row ticket-sell">
     
-                        <div class="ticket-box">
-                            <img src="./assets/img/ticket/newyork.jpg" alt="New York">
+                        <div class="col col-third text-center">
+                        <img src="./assets/img/ticket/newyork.jpg" alt="New York">
                             <div class="container-ticket-info white-background">                                
                                 <p class="ticket-title black-text">
                                     <b>New York</b>
@@ -119,7 +128,7 @@
                             </div>
                         </div>
     
-                        <div class="ticket-box">
+                        <div class="col col-third text-center">
                             <img src="./assets/img/ticket/paris.jpg" alt="Paris">
                             <div class="container-ticket-info white-background">
                                 <p class="ticket-title black-text">
@@ -131,7 +140,7 @@
                             </div>
                         </div>
                         
-                        <div class="ticket-box">
+                        <div class="col col-third text-center">
                             <img src="./assets/img/ticket/sanfran.jpg" alt="San Francisco">
                             <div class="container-ticket-info white-background">
                                 <p class="ticket-title black-text">
@@ -143,11 +152,13 @@
                                 
                             </div>
                         </div>
-    
+                        <div class="clear"></div>
                     </div>
                 </div>
             </div>
+            <!-- End Tour Dates -->
 
+            <!-- Start Ticket Modal -->
             <div id="ticketModal" class="js-ticketModal">
                 <div class="modal-content js-modal-content">
                     <span class="x-btn js-x-btn">x</span>
@@ -182,6 +193,7 @@
                     </div>
                 </div>
             </div>
+            <!-- End Ticket Modal -->
 
             <div class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
@@ -201,32 +213,6 @@
         </div>
     </div>
 
-    <script>
-        // Show and hidden Modal
-        const buyBtns = document.querySelectorAll('.js-buy-btn');
-        const ticketModal = document.querySelector('.js-ticketModal');
-        const modalContent = document.querySelector('.js-modal-content');
-        const closeBtn = document.querySelector('.js-x-btn');
-
-        function showModal() {
-            ticketModal.classList.add('show-modal');    
-        }
-
-        function hiddenModal() {
-            ticketModal.classList.remove('show-modal');
-        }
-
-        for (const buyBtn of buyBtns) {
-            buyBtn.addEventListener('click', showModal)
-        }
-        
-        closeBtn.addEventListener('click', hiddenModal);
-        
-        ticketModal.addEventListener('click', hiddenModal);
-        
-        modalContent.addEventListener('click', (event) => {
-            event.stopPropagation();
-        })
-    </script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
