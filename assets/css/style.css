@@ -17,7 +17,15 @@ html {
 }
 
 .text-center {
-    text-align: center;
+    text-align: center !important;
+}
+
+.text-size-15 {
+    font-size: 15px;
+}
+
+.input-border {
+    border: 1px solid #ccc;
 }
 
 .white-background {
@@ -36,6 +44,10 @@ html {
     clear: both;
 }
 
+.icon-right-space {
+    padding-right: 16px;
+}
+
 .row {
     margin-left: -8px;
     margin-right: -8px;
@@ -50,6 +62,9 @@ html {
     width: 33.33333%;
 }
 
+.col-half {
+    width: 50%;
+}
 
 /* ------------Main-------------- */
 
@@ -367,7 +382,6 @@ span.x-btn {
 
 .input-quantity, .input-email {
     width: 100%;
-    border: 1px solid #ddd;
     padding: 8px;
     margin-bottom: 16px;
 }
@@ -424,6 +438,49 @@ button.modal-pay-btn:hover {
 
 /* ------------------------------ */
 
+
+/* Start Contact Section */
+.contact-body {
+    margin: 32px 0;
+}
+
+.contact-item {
+    line-height: 1.5;
+}
+
+.msg-container input {
+    padding: 8px;
+    line-height: 1.5;
+}
+
+.msg-container .user-infor .contact-name,
+.msg-container .user-infor .contact-email {
+    padding: 8px;
+    width: 100%;
+    display: block;
+}
+
+.msg-container .message {
+    display: block;
+    width: 100%;
+    margin-top: 6px;
+
+}
+
+.contact-send-btn {
+    margin: 16px 0;
+    padding: 8px 16px;
+    border: none;
+    float: right;
+    line-height: 1.7;   
+}
+
+.contact-send-btn:hover {
+    background: #ddd !important;
+    color: #000 !important;
+}
+
+/* End Contact Section */
 
 /* Start Footer */
 #footer {
