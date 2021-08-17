@@ -5,6 +5,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: Helvetica, Arial, sans-serif;
 }
 /*-------------Common Css------------*/
@@ -472,7 +473,8 @@ button.modal-pay-btn:hover {
     padding: 8px 16px;
     border: none;
     float: right;
-    line-height: 1.7;   
+    line-height: 1.7;
+    cursor: pointer;   
 }
 
 .contact-send-btn:hover {
