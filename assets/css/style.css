@@ -483,14 +483,27 @@ button.modal-pay-btn:hover {
 /* End Contact Section */
 
 /* Start Footer */
-#footer {
-
-}
-
-#banner {
-
+#location img{
+    width: 100%;
+    filter: grayscale(50%);
 }
 
 #more {
- 
+    padding: 64px 16px;
+    background-color: #f1f1f1;
+    opacity: 0.6;
+    line-height: 1.5;
+}
+
+#more i {
+    font-size: 24px;
+}
+
+#more i:hover {
+    opacity: 0.5;
+} 
+
+#more p {
+    font-size: 15px;
+    margin: 16px 0;
 }
