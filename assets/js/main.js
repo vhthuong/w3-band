@@ -1,3 +1,18 @@
+//Responsive Mobile
+//Header menu 
+const header = document.getElementById('header');
+const mobileMenu = document.getElementById('mobile-menu');
+const headerHeight = header.clientHeight;
+mobileMenu.onclick = function() {
+    let isClosed = header.clientHeight === headerHeight;
+    if (isClosed) {
+        header.style.height = 'auto';
+    } else {
+        header.style.height = null;
+    }
+}
+
+
 // Show and hidden Modal
 const buyBtns = document.querySelectorAll('.js-buy-btn');
 const ticketModal = document.querySelector('.js-ticketModal');

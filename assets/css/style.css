@@ -131,6 +131,7 @@ html {
     min-width: 160px;
 }
 
+#mobile-menu,
 #search {
     position: absolute;
     right: 0;
@@ -139,9 +140,15 @@ html {
     padding: 14.5px 24px;
 }
 
+#mobile-menu,
 #search a {
     color: #fff;
     text-decoration: none;
+}
+
+#mobile-menu:hover {
+    color: #000;
+    background-color: #fff;
 }
 
 #search:hover {

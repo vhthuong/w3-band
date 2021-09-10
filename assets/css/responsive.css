@@ -1,0 +1,32 @@
+/* PC Break Point */
+@media (min-width: 1024px) {
+   #mobile-menu {
+       display: none;
+   }
+}
+
+/* Tablet Break Point */
+@media (min-width: 740px) and (max-width: 1023px) {
+    #mobile-menu {
+        display: none;
+    }
+}
+
+/* Mobile Break Point */
+@media (max-width: 739px) {
+    #header {
+        overflow: hidden;
+    }
+
+    #search {
+        display: none;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #slider .img-container .detail {
+        display: none;
+    }
+}
