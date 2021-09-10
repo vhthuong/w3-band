@@ -1,4 +1,4 @@
-//Responsive Mobile
+//-----Responsive Mobile------
 //Header menu 
 const header = document.getElementById('header');
 const mobileMenu = document.getElementById('mobile-menu');
@@ -12,8 +12,23 @@ mobileMenu.onclick = function() {
     }
 }
 
+// Auto close menu when click on menu item
+const menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+for (let item = 0; item < menuItems.length; item++ ){
+    let menuItem = menuItems[item];
+    
+    menuItem.onclick = function(event) {
+        let isParentMenu = menuItem.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnav');
+        if (isParentMenu){
+            event.preventDefault()
+        } 
+        else {
+            header.style.height = null;
+        }
+    }
+}
 
-// Show and hidden Modal
+// -----------Show and hidden Modal---------
 const buyBtns = document.querySelectorAll('.js-buy-btn');
 const ticketModal = document.querySelector('.js-ticketModal');
 const modalContent = document.querySelector('.js-modal-content');

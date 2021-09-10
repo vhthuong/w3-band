@@ -105,7 +105,7 @@ html {
     text-decoration: none;
     display: block;
     line-height: 46px;
-    padding: 0 24px;
+    padding: 1px 24px;
 }
 
 #nav > li:hover > a,
@@ -129,6 +129,10 @@ html {
 
 #nav .subnav li {
     min-width: 160px;
+}
+
+.subnav li a {
+    color: #000;
 }
 
 #mobile-menu,

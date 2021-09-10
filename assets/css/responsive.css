@@ -22,8 +22,22 @@
         display: none;
     }
 
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
     #nav > li {
         display: block;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background-color: #000;
+    }
+
+    #nav .subnav li a {
+        color: #fff;
+        padding: 1px 40px;
     }
 
     #slider .img-container .detail {
