@@ -59,12 +59,20 @@ html {
     padding: 0 8px;
 }
 
+.col-full {
+    width: 100%;
+}
+
 .col-third {
     width: 33.33333%;
 }
 
 .col-half {
     width: 50%;
+}
+
+.mt-16 {
+    margin-top: 16px;
 }
 
 /* ------------Main-------------- */
@@ -235,7 +243,7 @@ html {
 }
 
 #content .content-section .about-team {
-    padding: 32px;
+    
 }
 
 
@@ -284,7 +292,7 @@ html {
 }
 
 .ticket-sell {
-    margin-top: 32px;
+    margin-top: 16px;
     margin-bottom: 32px;
 }
 

@@ -14,6 +14,19 @@
 
 /* Mobile Break Point */
 @media (max-width: 739px) {
+    .s-col-full,
+    .s-btn-full {
+        width:100%;
+    }
+
+    .s-mt-16 {
+        margin-top: 16px;
+    }
+
+    .s-mt-8 {
+        margin-top: 8px;
+    }
+
     #header {
         overflow: hidden;
     }
@@ -43,4 +56,9 @@
     #slider .img-container .detail {
         display: none;
     }
+
+    #content .content-section .about-team img {
+        width: 60%;
+    }
+
 }
